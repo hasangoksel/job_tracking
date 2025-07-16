@@ -3,8 +3,6 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Modules\Personal\Models\Personal;
-use Modules\Personal\Observers\PersonalObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,6 +19,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Personal::observe(PersonalObserver::class);
+        //
     }
 }
