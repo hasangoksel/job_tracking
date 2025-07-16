@@ -8,7 +8,6 @@ class PersonalService
 {
     public function create(array $data): Personal
     {
-        $data->status = true;
         return Personal::create($data);
     }
 }
